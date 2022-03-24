@@ -1,0 +1,48 @@
+//5th lecture
+//WAP to print to show what is Scanner class and String.
+//WAP to print the addition of two numbers using Scanner class entered inputs from users.
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+  public static void main(String[] args) {
+
+
+    Scanner s=new Scanner(System.in);       //Scanner class is used to get input from the user through keyboard
+
+    //this is part 1
+
+    System.out.println("Enter 1st number:");   //getting num1 from user
+    int a=s.nextInt();
+    System.out.println("Enter 2nd number:");  //getting num2 from user
+    int b=s.nextInt();
+    int sum=a+b;           //calculating sum of two numbers
+    System.out.println("The sum is:"+sum);    //printing the result.
+
+    System.out.println("Enter a number to check entered number is Integer number or not!"); //getting a input from user to check entered value is Integer or not.
+    boolean wow=s.hasNextInt();       //hasnextInt() --> it is used to check entered value is Integer or not if yes then print true or if no then print false.
+    System.out.println(wow);  //print ture or false according your entered data.
+
+    //both part 1 and part 2 are not executed at same time you have to execute them seprately.
+
+    //this is part 2
+
+    System.out.println("Enter String:");  //getting String from user through keyboard.
+    String str=s.nextLine(); //nextLine() --> it is used to get all data from user including characters,numbers and special symbols.
+    System.out.println("The String is:");
+    System.out.println(str);
+
+  }
+}
+
+
+
+
+
+
+
+
+
