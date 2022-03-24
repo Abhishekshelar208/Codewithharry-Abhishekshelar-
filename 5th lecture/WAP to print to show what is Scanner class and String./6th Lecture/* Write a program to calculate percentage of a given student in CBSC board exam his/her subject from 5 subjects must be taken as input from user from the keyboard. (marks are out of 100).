@@ -1,0 +1,62 @@
+// 6th Lecture
+/* Write a program to calculate percentage of a given student in CBSC board exam his/her subject from 5 subjects must be taken as input from user
+from the keyboard. (marks are out of 100).
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+        package com.company;
+
+import java.util.Scanner;
+
+class Main{
+  public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);    //Scanner class is used to getting input form the user side.
+
+    System.out.println("Enter your name:");   //getting name from the user
+    String name=s.nextLine();
+
+    System.out.println("Enter your SEN marks:");  //getting subject 1 marks from the user
+    int sen=s.nextInt();
+
+    System.out.println("Enter your CNE marks:");   //getting subject 2 marks from the user
+    int cne=s.nextInt();
+
+    System.out.println("Enter your JPR marks:");  //getting subject 3 marks from the user
+    int jpr=s.nextInt();
+
+    System.out.println("Enter your GAD marks:");    //getting subject 4 marks from the user
+    int gad=s.nextInt();
+
+    System.out.println("Enter your DMA marks:");    //getting subject 5 marks from the user
+    int dma=s.nextInt();
+
+    double total=(sen+cne+jpr+gad+dma);       //calculating total marks of 5 subjects.
+
+    double percentage=(total/500)*100;   //calculating percentages of your 5 marks.
+
+    System.out.println();      //giving an extra line to look our output better.
+
+    System.out.println("Name is:"+name);    //display the name which entered by user.
+
+    System.out.println("Marks of SEN is:"+sen);   //display the subject 1 marks which entered by user.
+
+    System.out.println("Marks of CNE is:"+cne);    //display the subject 2 marks which entered by user.
+
+    System.out.println("Marks of JPR is:"+jpr);    //display the subject 3 marks which entered by user.
+
+    System.out.println("Marks of GAD is:"+gad);    //display the subject 4 marks which entered by user.
+
+    System.out.println("Marks of DMA is:"+dma);    //display the subject 5 marks which entered by user.
+
+    System.out.println();     //giving an extra line to look our output better.
+
+    System.out.println("Total of your all marks is:"+total);   //display the total of 5 subjects marks.
+
+    System.out.println();     //giving an extra line to look our output better.
+
+    System.out.println("Percentage is:"+percentage);     //display the percentage of 5 subjects marks.
+
+  }
+}
+
+
