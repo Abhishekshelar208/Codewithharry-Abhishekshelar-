@@ -1,0 +1,26 @@
+//4th lecture
+//WAP to print  Different Datatypes.
+
+
+package com.company;
+
+class Main{
+    public static void main(String[] args) {
+       byte age=34;
+       short age2=87;
+       char X='A';
+       float f1=5.4f;
+       double d1=4.660D;
+       boolean a=true;
+       String str="Abhishek";
+        System.out.println("The value of byte is:"+age);
+        System.out.println("The value of short is:"+age2);
+        System.out.println("The value of char is:"+X);
+        System.out.println("The value of float is:"+f1);
+        System.out.println("The value of double is:"+d1);
+        System.out.println("The value of boolean is:"+a);
+        System.out.println("The value of String is:"+str);
+
+
+    }
+}
